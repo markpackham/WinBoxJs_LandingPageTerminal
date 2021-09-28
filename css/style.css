@@ -45,3 +45,56 @@ a {
 p {
   margin: 20px 0;
 }
+
+nav {
+  width: 30%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--text-color);
+  }
+
+}
+
+/* WinBox */
+.wb-body {
+  background: #111;
+  padding: 20px;
+}
